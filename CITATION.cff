@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated article and this software repository."
+title: "Semantic Funnel"
+type: software
+version: "1.0.0"
+date-released: 2026-03-30
+license: MIT
+repository-code: "https://github.com/jy00295005/semantic_funnel"
+abstract: "Code and supporting data for a four-round Semantic Funnel that extracts, filters, clusters, and canonicalizes research technologies from paper metadata."
+keywords:
+  - semantic funnel
+  - scientometrics
+  - technology extraction
+  - clustering
+  - canonicalization

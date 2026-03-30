@@ -1,23 +1,25 @@
 # Semantic Funnel
 
-This repository contains a clean release of the four-round Semantic Funnel used to extract, filter, cluster, and canonicalize research technologies from paper metadata.
+This repository contains the public code release for the four-round Semantic Funnel used in our study to extract, filter, cluster, and canonicalize research technologies from paper metadata.
 
-## Repository structure
+## What this repository contains
+
+The repository is organized into two parts:
 
 - `round1_round2_extract.py`: Round 1 raw term extraction and Round 2 specificity filtering
 - `round3_cluster.py`: Round 3 hotspot-local clustering
 - `round4_canonicalize.py`: Round 4 cross-topic canonicalization
-- `prompts.py`: prompt definitions used by Round 1 and Round 2
-- `run_pipeline.sh`: convenience wrapper for the four stages
+- `prompts.py`: prompt definitions used by the extraction stages
+- `run_pipeline.sh`: convenience wrapper for the four rounds
 - `requirements.txt`: minimal Python dependencies
 - `.env.example`: environment variable template
-- `data/`: place input CSV files here
+- `data/`: location for user-supplied input CSV files
 - `results/`: output directory for pipeline results
-- `related_data/`: English supporting data and documentation files related to the Semantic Funnel and supplementary materials
+- `related_data/`: English supporting files associated with the Semantic Funnel and supplementary materials
 
-## Expected input schema
+## Input schema
 
-The Round 1-2 input CSV is expected to contain at least these columns:
+The Round 1-2 input CSV is expected to contain at least the following columns:
 
 - `ID`: paper identifier
 - `TI`: title
@@ -26,6 +28,8 @@ The Round 1-2 input CSV is expected to contain at least these columns:
 - `GroupName`: hotspot or research-group label
 
 ## Output files
+
+Running the full pipeline produces:
 
 - `results/<dataset>_round1_results.csv`
 - `results/<dataset>_round2_results.csv`
@@ -72,3 +76,11 @@ The `related_data/` directory contains English-only supporting files associated 
 ## Scope
 
 This repository is limited to the Semantic Funnel code release and closely related supporting data. It does not include manuscript drafting files, local environment files, or unrelated project artifacts.
+
+## Citation
+
+Please cite the associated article for the scientific contribution. If you refer specifically to the code release, you may also cite this repository using the metadata in `CITATION.cff`.
+
+## License
+
+This repository is released under the MIT License. See `LICENSE` for details.
