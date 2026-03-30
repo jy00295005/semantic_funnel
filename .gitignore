@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+results/*
+!results/round3/
+!results/round4/
+results/round3/*
+results/round4/*
+data/*
+!data/README.md

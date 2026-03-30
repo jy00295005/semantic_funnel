@@ -1,0 +1,4 @@
+type,primary_intent,dominant_evidence,decision_rule
+Basic Technology,method/theory development,"algorithmic novelty, modeling framework, mechanism-level contribution",assign when methodological novelty is central and application context is secondary
+Applied Technology,method adaptation and integration,domain-adapted architecture or technical integration for specific classes of tasks,assign when method innovation and domain adaptation are both central
+Application Domain,problem deployment and solution performance,"task-centric framing, deployment outcomes, domain-specific evaluation context",assign when application scenario dominates and methods are used mainly as tools
